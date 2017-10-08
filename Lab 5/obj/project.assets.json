@@ -7045,11 +7045,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\Desktop\\Lab 5\\Lab 5\\Lab 5.csproj",
+      "projectUniqueName": "C:\\Users\\User\\Desktop\\Lab OOP\\Lab 5\\Lab 5\\Lab 5.csproj",
       "projectName": "Lab 5",
-      "projectPath": "C:\\Users\\User\\Desktop\\Lab 5\\Lab 5\\Lab 5.csproj",
+      "projectPath": "C:\\Users\\User\\Desktop\\Lab OOP\\Lab 5\\Lab 5\\Lab 5.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\User\\Desktop\\Lab 5\\Lab 5\\obj\\",
+      "outputPath": "C:\\Users\\User\\Desktop\\Lab OOP\\Lab 5\\Lab 5\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
