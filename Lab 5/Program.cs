@@ -17,34 +17,36 @@ namespace Lab_5
             Turner Turner2 = new Turner("Maxim", "Svirid", 25, "machine operator of wide profile", "AutoCardan", 34000);
             Programmer Programmer1 = new Programmer("Maxim", "Svirid", 28, "JS, AspectJ, PL/M, REXX", "EPAM", 44000);
 
-
+            
             Person Person1 =  Employee1 as Person;
             IInfo IInfo1= Programmer1 as IInfo;
             Learner Learner1 = Student1 as Learner;
 
-           // Print Print1 = new Print();
+            Print Print1 = new Print();
 
             var Massiv = new Object[8] { Turner1, Student1, Employee1, Turner2 , Programmer1, Person1, IInfo1, Learner1 };
 
             foreach(Object i in Massiv)
             {
-                Print.IAmPrinting((Person)i);
+                Print1.IAmPrinting((Person)i);
                 Console.WriteLine();
             }
-
+            
             Console.ReadKey();
         }
     }
+
 
 
     interface IInfo
     {
         string Information();
     }
-    interface IGet
+    interface IGet 
     {
         void GetStr();
     }
+
 
 
 
@@ -85,8 +87,6 @@ namespace Lab_5
         {
             return String.Format("Тип объекта: Person") + "\n" + Information();
         }
-
-
     }
 
     abstract class Working : Person
@@ -104,7 +104,6 @@ namespace Lab_5
             set { wage = value; }
         }
 
-        
 
         public Working(string name, string family, int age, string organization,int wage) : base(name,family,age)
         {
@@ -184,7 +183,6 @@ namespace Lab_5
         }
 
 
-
         public override string Information()
         {
             //base.Information();
@@ -244,6 +242,7 @@ namespace Lab_5
             Turner  Obj = (Turner)obj;
             return GetHashCode()== Obj.GetHashCode();
         }
+
         public override int GetHashCode()
         {
             return (Name + Family+Age).GetHashCode();
@@ -334,15 +333,14 @@ namespace Lab_5
     }
 
     class Print
-    {
-      public static void IAmPrinting(Person obj)
+    { 
+      public  void IAmPrinting(Person obj)
         {
-            Console.WriteLine(obj.GetType());
+            if (obj == null) return;
+
+                Console.WriteLine(obj.GetType());
             Console.WriteLine(obj.ToString());
         }
-
-
-
     }
 
 
